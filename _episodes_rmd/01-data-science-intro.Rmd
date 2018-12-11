@@ -1,7 +1,7 @@
 ---
 title: "R과 RStudio 소개"
-teaching: 45
-exercises: 10
+teaching: 180
+exercises: 0
 questions:
 - "데이터 과학이란 무언인가?"
 objectives:

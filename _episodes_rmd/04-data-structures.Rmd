@@ -1,7 +1,7 @@
 ---
 title: "자료구조(Data Structures)"
-teaching: 40
-exercises: 15
+teaching: 180
+exercises: 0
 questions:
 - "R에 데이터를 어떻게 불러올 수 있을까?"
 - "R에서 기본 자료구조는 무엇인가?"

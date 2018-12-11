@@ -1,9 +1,9 @@
 ---
-title: "R 마크다운"
+title: "저작권과 라이선스"
 teaching: 180
 exercises: 0
 questions:
-- "데이터과학 첫번째 제품 - 보고서"
+- "데이터 과학자가 알아야 하는 법규준수는 무엇인가?"
 objectives:
 - ""
 keypoints:
@@ -13,8 +13,9 @@ source: Rmd
 
 ```{r, include=FALSE}
 source("../bin/chunk-options.R")
-knitr_fig_path("02-")
+knitr_fig_path("08-")
+
 ```
 
-## 
+
 

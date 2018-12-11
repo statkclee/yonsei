@@ -1,7 +1,7 @@
 ---
 title: "데이터프레임"
-teaching: 20
-exercises: 10
+teaching: 180
+exercises: 0
 questions:
 - "데이터프레임을 어떻게 조작할 수 있을까?"
 objectives:
