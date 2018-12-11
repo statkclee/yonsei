@@ -179,7 +179,7 @@ R로 작업하는 가장 효과적인 방법이 인터랙티브 세션에서 여
 > > 
 > > 
 > > ~~~
-> > -rw-r--r--  1 statkclee  staff    80K 10 15 11:55 data/gapminder_data.csv
+> > -rw-r--r--  1 statkclee  staff    80K 12 11 10:59 data/gapminder_data.csv
 > > ~~~
 > > {: .output}
 > > 파일 크기는 80K.
