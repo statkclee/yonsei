@@ -1,0 +1,20 @@
+---
+title: "R 마크다운"
+teaching: 20
+exercises: 10
+questions:
+- "데이터과학 첫번째 제품 - 보고서"
+objectives:
+- ""
+keypoints:
+- ""
+source: Rmd
+---
+
+```{r, include=FALSE}
+source("../bin/chunk-options.R")
+knitr_fig_path("02-")
+```
+
+## 
+

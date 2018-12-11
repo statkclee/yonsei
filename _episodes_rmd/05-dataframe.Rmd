@@ -1,5 +1,5 @@
 ---
-title: "데이터프레임 탐색하기"
+title: "데이터프레임"
 teaching: 20
 exercises: 10
 questions:

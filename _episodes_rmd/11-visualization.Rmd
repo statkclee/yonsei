@@ -1,5 +1,5 @@
 ---
-title: ggplot으로 논문 품질 그래프 생성하기
+title: "`ggplot`으로 논문 품질 그래프 생성하기"
 teaching: 60
 exercises: 20
 questions:

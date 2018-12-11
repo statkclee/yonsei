@@ -1,0 +1,19 @@
+---
+title: "데이터와 사투"
+teaching: 20
+exercises: 10
+questions:
+- "데이터와 사투를 벌이는 기술"
+objectives:
+- ""
+keypoints:
+- ""
+source: Rmd
+---
+
+```{r, include=FALSE}
+source("../bin/chunk-options.R")
+knitr_fig_path("05-")
+```
+
+
