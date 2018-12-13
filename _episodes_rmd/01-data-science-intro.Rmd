@@ -1,14 +1,19 @@
 ---
-title: "R과 RStudio 소개"
+title: "데이터 과학 (Data Science)"
 teaching: 180
 exercises: 0
 questions:
 - "데이터 과학이란 무언인가?"
 - "왜 엑셀 해방운동을 펼치는가?"
+- "왜 GUI는 데이터 과학의 미래가 될 수 없는가?"
 objectives:
-- ""
+- "데이터 과학을 이해한다."
+- "엑셀(스프레드쉬트)의 장단점을 살펴본다."
+- "CLI와 GUI 활용분야를 파악한다."
 keypoints:
 - "데이터 과학을 이해한다."
+- "스프레드쉬트의 한계를 명확히 한다."
+- "데이터 과학의 현재 위치를 살펴본다."
 source: Rmd
 ---
 
