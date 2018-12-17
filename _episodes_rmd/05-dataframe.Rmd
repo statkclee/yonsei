@@ -39,7 +39,7 @@ R의 모든 기본 자료형과 자료구조에 대한 여행을 마쳤다.
 
 관계형 데이터 크기가 작은 경우 PC에서 데이터프레임으로 처리하면 되는데 데이터 크기가 PC 메모리 크기를 넘어가는 경우 외부 데이터베이스에 데이터를 저장하고 이를 쿼리해서 처리하는 방식을 많이 취한다. 최근에는 이를 더 확장한 개념의 하둡/스파크와 같은 NoSQL 형태 데이터도 많이 다뤄지고 있다.
 
-<img src="../fig/dplyr-sql.png" alt="dplyr + sql" width="100%" />
+<img src="../fig/dplyr-sql.png" alt="dplyr + sql" width="77%" />
 
 # 데이터프레임(데이터프레임) 
 
@@ -478,20 +478,6 @@ tbl(con, sql("SELECT mpg, cyl, vs, am FROM mtcars WHERE mpg > 20"))
 tbl(con, sql("SELECT mpg, cyl, vs, am FROM mtcars WHERE mpg > 20")) %>% 
   ggplot(aes(x=as.factor(am), y=mpg)) +
     geom_boxplot()
-```
-
----
-title: "SQL databases and R"
-author: Data Carpentry contributors
----
-
-```{r source, include=FALSE, purl=FALSE}
-source("setup.R")
-if (file.exists("portal-database.sqlite")) file.remove("portal-database.sqlite")
-```
-
-```{r, purl=TRUE, echo=FALSE}
-## SQL databases and R
 ```
 
 
@@ -950,7 +936,7 @@ use R to create a new database, e.g. from existing `csv` files.  Let's recreate
 the mammals database that we've been working with, in R. First let's read in the
 `csv` files.
 
-```{r data_frames, purl=TRUE}
+```{r data_frames, purl=TRUE, eval=FALSE}
 species <- read_csv("data/species.csv")
 surveys <- read_csv("data/surveys.csv")
 plots <- read_csv("data/plots.csv")
@@ -963,20 +949,20 @@ argument instructs R to create a new, empty database instead.
 **Caution:** When `create = TRUE` is added, any existing database at the same
 location is overwritten _without warning_.
 
-```{r create_database, purl=TRUE}
+```{r create_database, purl=TRUE, eval=FALSE}
 my_db_file <- "portal-database.sqlite"
 my_db <- src_sqlite(my_db_file, create = TRUE)
 ```
 
 Currently, our new database is empty, it doesn't contain any tables:
 
-```{r empty, results='show'}
+```{r empty, results='show', eval=FALSE}
 my_db
 ```
 
 To add tables, we copy the existing data.frames into the database one by one:
 
-```{r copy, purl=FALSE}
+```{r copy, purl=FALSE, eval=FALSE}
 copy_to(my_db, surveys)
 copy_to(my_db, plots)
 my_db
@@ -1006,6 +992,3 @@ from flat files!
 reading the three `csv` files. Because all the data has to flow through R,
 this is not suitable for very large datasets.
 
-
-```{r, child="_page_built_on.Rmd"}
-```

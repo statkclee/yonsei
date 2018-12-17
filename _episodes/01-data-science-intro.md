@@ -45,6 +45,22 @@ source: Rmd
 
 ## 엑셀 해방운동 {#data-science-excel}
 
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+
+- 과학(Science)은 재현성(Reproducibility)이 전부다.
+- (칼 포퍼(Karl Popper), 1959) "반복 가능한 실험으로서 특정한 사건이 규칙과 조절에 부합하게 반복될 때에만, 원칙적으로 우리의 관찰은 누구에게서든지 검증될 수 있다... 이러한 반복을 통해서만 우리는 "우리가 단지 고립된 '우연의 일치' 를 다루고 있는 것이 아니며, 그것의 규칙성과 재현 가능성으로 인해, 간주관적으로 검증 가능한 것을 다루고 있다" 고 스스로 확신할 수 있는 것이다."
+(Only when certain events recur in accordance with rules or regularities, as in the case of repeatable experiments, can our observations be tested - in principle - by anyone... Only by such repetition can we convince ourselves that we are not dealing with a mere isolated 'coincidence,' but with events which, on account of their regularity and reproducibility, are in principle inter-subjectively testable.)
+- (존 터키(John Tukey), 1969) "확신은 반복을 통해서 만들어진다. 이 명제를 회피하려는 그 어떠한 시도도 성공할 수 없으며, 오히려 파괴적이다."
+(Confirmation comes from repetition. Any attempt to avoid this statement leads to failure and more probably to destruction.)
+- (게리 킹(Gary King), 2011)"과학이라는 활동이 따로 있고, 재현이라는 활동이 따로 있는 것이 아니다."
+(It's not that there's an activity called 'science' and there's a separate activity called 'replication.')'
+
+출처: [나무위키 - "재현성"](https://namu.wiki/w/%EC%9E%AC%ED%98%84%EC%84%B1)
+</div>
+
 - 소프트웨어 카펜트리 
     - [스프레드쉬트에서 데이터베이스로](http://statkclee.github.io/capstone-novice-spreadsheet-biblio/)
 - [위기의 스프레드쉬트](https://statkclee.github.io/data-science/ds-why-not-excel.html)    
