@@ -758,43 +758,41 @@ data_subset <- surveys %>%
 
 ## 복잡한 데이터베이스 쿼리
 
-**`dplyr`** enables database queries across one or multiple database tables, using
-the same single- and multiple-table verbs you encountered previously. This means
-you can use the same commands regardless of whether you interact with a remote
-database or local dataset! This is a really useful feature if you work with
-large datasets: you can first prototype your code on a small subset that fits
-into memory, and when your code is ready, you can change the input dataset to
-your full database without having to change the syntax.
+**`dplyr`**은 단일 테이블(`select` 등), 두 테이블 동사(`left_join()` 등)를 사용해서 하나 이상 데이터베이스
+테이블에 쿼리를 보낼 수 있다.
+이것이 의미하는 바는 원격 데이터베이스 혹은 로컬 데이터셋에 관계없이 같은 명령어를 사용할 수 있음을 함의한다.
+대용량 데이터셋으로 작업한느 경우 매우 유용한 기능이다: 즉, 먼저 메모리에 올라갈 수 있는 
+작은 데이터셋 일부로 프로토타입 시제품 코드를 작성하고 나서, 코드가 완성되면 
+작성한 코드를 변경시킬 필요 없이, 전체 데이터베이스로 변경하기만 하면 된다. 
 
-On the other hand, being able use SQL queries directly can be useful if your
-collaborators have already put together complex queries to prepare the dataset
-that you need for your analysis.
+다른 한편으로는 SQL 쿼리를 직접 던지는 것도 도움이 될 수 있는데 이런 경우는 
+함께 작업하시는 분이 분석에 필요한 데이터셋을 준비하는데 이미 복잡한 쿼리를 작성한 경우가 이에 해당된다.
 
-To illustrate how to use **`dplyr`** with these complex queries, we are going to join
-the `plots` and `surveys` tables. The `plots` table in the database contains
-information about the different plots surveyed by the researchers. To access it,
-we point the `tbl()` command to it:
+
+**`dplyr`**로 복잡한 쿼리를 작성하는 방법을 `plots`와 `surveys` 테이블 조인하는 사례를 통해 살펴보자.
+데이터베이스 `plots` 테이블에는 다양한 지점에서 연구자들이 계측한 정보가 담겨있다.
+이곳에 접근하려면 `tbl()` 명령어로 `plots`을 지칭하도록 한다:
+
 
 ```{r plots, results='markup', purl=FALSE}
 plots <- tbl(mammals, "plots")
 plots
 ```
 
-The `plot_id` column also features in the `surveys` table:
+`surveys` 테이블에 `plot_id` 칼럼도 이를 반영하고 있다:
 
 ```{r surveys, results='markup', purl=FALSE}
 surveys
 ```
 
-Because `plot_id` is listed in both tables, we can use it to look up matching
-records, and join the two tables.
+`plot_id` 키값이 테이블 양쪽에 있으니, 레코드를 매칭하는데 키값으로 사용해서 
+테이블 두개를 조인하게 된다.
 
 
 ![diagram illustrating inner and left joins](./img/joins.svg)
 
 
-For example, to extract all surveys for the first plot, which has `plot_id` 1,
-we can do:
+예를 들어, 첫번째 지점(plot)의 모든 관측결과(`plot_id`가 1)를 추출하려면 코드를 다음과 같이 작성한다:
 
 ```{r join, results='markup', purl=FALSE}
 plots %>%
@@ -803,24 +801,19 @@ plots %>%
   collect()
 ```
 
+**중요 사항:** `collect()`문이 없는 경우, 매칭되는 첫 10 행만 반환된다.
+`collect()` 구문을 추가함으로써 1,985 전체 데이터셋을 반환받을 수 있다.
 
-
-**Important Note:** Without the `collect()` statement, only the first 10
-matching rows are returned. By adding `collect()`, the full set of 1,985 is
-retrieved.
-
-> ### Challenge
+> ### 도전과제
 >
-> Write a query that returns the number of rodents observed in each plot in
-> each year.
+> 연도별, 지점별(plot) 관측된 설치류(rodents)를 반환시키는 쿼리를 작성하시오.
 >
-> Hint: Connect to the species table and write a query that joins the species
-> and survey tables together to exclude all non-rodents.
-> The query should return counts of rodents by year.
+> 힌트: `species` 테이블에 접속한다. 
+> `surveys` 테이블과 `species` 테이블을 조인하고 설치류(Rodents)만 뽑아낸다.
+> 그리고 나서 연도별 설치류 관측빈도수를 계수한다.
 >
-> Optional: Write a query in SQL that will produce the same result. You can join
-> multiple tables together using the following syntax where foreign key refers
-> to your unique id (e.g., `species_id`):
+> 선택사항: 동일한 결과를 산출하는 SQL 쿼리를 작성하시오.
+> 외래키(foreign key)로 유일무이한 id (즉, `species_id`)를 사용해서 테이블을 조인하면 된다.
 >
 > ```sql
 > SELECT table.col, table.col
@@ -830,7 +823,7 @@ retrieved.
 > ```
 >
 > ```{r left_join_answer, answer=TRUE, eval=TRUE}
-> ## with dplyr syntax
+> ## dplyr 구문
 > species <- tbl(mammals, "species")
 > 
 > left_join(surveys, species) %>%
@@ -839,7 +832,7 @@ retrieved.
 >   tally %>%
 >   collect()
 > 
-> ## with SQL syntax
+> ## SQL 구문
 > query <- paste("
 > SELECT a.year, b.taxa,count(*) as count
 > FROM surveys a
@@ -876,13 +869,14 @@ retrieved.
 
 ```
 
-> ### Challenge
+> ### 도전과제
 >
->  Write a query that returns the total number of rodents in each genus caught
->  in the different plot types.
+> 다른 유형의 관측지점(`plot_type`)에서 포획된 생물분류상의 속(`genus`)별 설치류 전체 개체수를
+> 파악하는 쿼리를 작성하시오.
 >
->  Hint: Write a query that joins the species, plot, and survey tables together.
->  The query should return counts of genus by plot type.
+> 힌트: `species`, `plots`, `surveys`를 모두 조인하는 쿼리를 작성한다.
+> 쿼리는 다른 유형의 관측지점(`plot_type`)별 생물분류상의 속(`genus`)별 관측빈도수를 
+> 반환해야만 된다.
 > 
 > ```{r genus_by_type_answer, answer=TRUE, results='markup', eval=FALSE}
 > species <- tbl("mammals", species)
@@ -906,11 +900,12 @@ retrieved.
 ##  type.
 ```
 
-This is useful if we are interested in estimating the number of individuals
-belonging to each genus found in each plot type. But what if we were interested
-in the number of genera found in each plot type? Using `tally()` gives the
-number of individuals, instead we need to use `n_distinct()` to count the
-number of unique values found in a column.
+다른 유형의 관측지점(`plot_type`)별 생물분류상의 속(`genus`)별로 속한 
+개체수를 추정하는데 앞서 작성한 쿼리는 유용한다.
+하지만, 다른 유형의 관측지점(`plot_type`)별로 유일무이한 속 숫자에 관심이 있다면 어떨가?
+`tally()`/`count()` 함수를 사용하면  개체수 정보를 주는 반면,
+`n_distinct()` 함수를 사용하게 되면 유일무이한 개체수 정보를 준다.
+
 
 ```{r count_unique_genera, purl=FALSE}
 species <- tbl(mammals, "species")
@@ -923,42 +918,39 @@ unique_genera <- left_join(surveys, plots) %>%
     collect()
 ```
 
-`n_distinct`, like the other **`dplyr`** functions we have used in this lesson, works
-not only on database connections but also on regular data frames.
+다른 여타 **`dplyr`** 함수처럼, `n_distinct` 함수는 데이터베이스 연결 시 사용할 수 있을 뿐만 아니라 정규 데이터프레임에도 사용이 가능하다.
 
+## 신규 SQLite 데이터베이스 생성
 
-## Creating a new SQLite database
-
-So far, we have used a previously prepared SQLite database. But we can also
-use R to create a new database, e.g. from existing `csv` files.  Let's recreate
-the mammals database that we've been working with, in R. First let's read in the
-`csv` files.
+지금까지, 사전에 준비된 SQLite 데이터베이스를 사용했다.
+하지만, R을 사용해서 기존 `csv` 파일로부터 신규 데이터베이스 생성도 가능하다.
+데이터 분석 작업할 `mammals` 데이터베이스를 다시 생성시키자. 먼저, `csv` 파일을 불러읽어들인다.
 
 ```{r data_frames, purl=TRUE, eval=FALSE}
-species <- read_csv("data/species.csv")
-surveys <- read_csv("data/surveys.csv")
-plots <- read_csv("data/plots.csv")
+species <- read_csv("../data/species.csv")
+surveys <- read_csv("../data/surveys.csv")
+plots <- read_csv("../data/plots.csv")
 ```
 
-Creating a new SQLite database with **`dplyr`** is easy. You can re-use the same
-command we used above to open an existing `.sqlite` file. The `create = TRUE`
-argument instructs R to create a new, empty database instead.
+SQLite 데이터베이스를 **`dplyr`**을 사용해서 생성시키는 것은 무척이나 쉽다.
+기존 `.sqlite` 파일을 열 때 앞서 사용한 것과 동일한 명령어를 재사용한다.
+`create = TRUE` 인자를 사용하면 R로 하여금 빈 깡통 데이터베이스를 생성시키게 된다.
 
-**Caution:** When `create = TRUE` is added, any existing database at the same
-location is overwritten _without warning_.
+**주의사항:** `create = TRUE`이 추가되면, 동일한 위치에 존재하는 기존 데이터베이스가 _경고없이_
+덮어쓰기가 되어 사라진다. 
 
 ```{r create_database, purl=TRUE, eval=FALSE}
 my_db_file <- "portal-database.sqlite"
 my_db <- src_sqlite(my_db_file, create = TRUE)
 ```
 
-Currently, our new database is empty, it doesn't contain any tables:
+현재, 신규 생성한 데이터베이스는 텅 비어있다. 즉, 어떤 테이블도 담겨있지 않다:
 
 ```{r empty, results='show', eval=FALSE}
 my_db
 ```
 
-To add tables, we copy the existing data.frames into the database one by one:
+테이블을 추가하려면, 기존 데이터프레임을 데이터베이스에 하나씩 순차적으로 복사해서 넣는다:
 
 ```{r copy, purl=FALSE, eval=FALSE}
 copy_to(my_db, surveys)
@@ -966,16 +958,20 @@ copy_to(my_db, plots)
 my_db
 ```
 
-If you check the location of our database you'll see that data is automatically
-being written to disk. R and **`dplyr`** not only provide easy ways to query
-existing databases, they also allows you to easily create your own databases
-from flat files!
+데이터베이스가 위치한 디렉토리를 확인하면, 데이터가 자동으로 디스크에 저장된 것을 확인할 수 있다.
+R과 **`dplyr`**을 조합해서 기존 데이터베이스를 쿼리하는 것도 쉬울 뿐만 아니라,
+`csv` 파일로부터 자체 데이터베이스도 쉽게 생성시킬 수 있다!
 
-> ### Challenge
+
+> ### 도전과제
 >
 > Add the remaining species table to the `my_db` database and run some of your
 > queries from earlier in the lesson to verify that you have
 > faithfully recreated the mammals database.
+> 
+> `my_db` 데이터베이스에 나머지 `species` 테이블도 추가한다.
+> 앞선 학습에서 배운 쿼리를 실행시켜 `mammals` 데이터베이스가 제대로 
+> 재생성되었는지 확인해본다.
 
 
 ```{r challenge-sql-3, purl=TRUE, echo=FALSE}
@@ -990,3 +986,5 @@ from flat files!
 reading the three `csv` files. Because all the data has to flow through R,
 this is not suitable for very large datasets.
 
+**주목:** 이번 예제에서, `csv` 파일 세개 모두 R 세션으로 데이터를 불러읽어들였다.
+모든 데이터를 R 작업흐름을 태웠는데, 데이터셋이 무척 큰 경우 이런 작업흐름이 적합하지는 않다.
