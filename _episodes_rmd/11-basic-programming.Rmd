@@ -101,4 +101,4 @@ quick_sort(unsorted_vec)
 
 [Wikipedia, "Sorting quicksort anim.gif"](https://en.wikipedia.org/wiki/File:Sorting_quicksort_anim.gif)
 
-<img src="../fig/Sorting_quicksort_anim.gif" alt="퀵정렬" width="100%" />
+<img src="../fig/Sorting_quicksort_anim.gif" alt="퀵정렬" width="57%" />
