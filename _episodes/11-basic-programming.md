@@ -35,7 +35,7 @@ editor_options:
 
 계승을 산술적으로 표현하면 다음과 같다.
 
-$5! = 1 \times 2 \times 3 \times 4 \times 5 =  120$
+$5! = 1 \times 2 \times 3 \times 4 \times 5 = 120$
 
 이를 대수적으로 표현하면 다음과 같이 표현할 수 있다.
 
@@ -67,8 +67,7 @@ factorial(5)
 
 ### 퀵정렬 (quick sort) [^quick-sort-recursion]
 
-[^quick-sort-recursion]: [Jason A. French
-Northwestern University, "Recursion in R"](http://www.jason-french.com/blog/2014/07/26/recursion-in-r/)
+[^quick-sort-recursion]: [Jason A. French Northwestern University, "Recursion in R"](http://www.jason-french.com/blog/2014/07/26/recursion-in-r/)
 
 재귀는 때때로 이해하기 어려운 것으로 기술된다. 이 말을 믿지 마세요. 루프를 이해하면, 재귀도 이해할 수 있다.
 
