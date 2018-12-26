@@ -1,5 +1,5 @@
 ---
-title: "웹크롤링 [특강-나성호]"
+title: "데이터 수집 - 웹크롤링 [특강-나성호]"
 teaching: 180
 exercises: 0
 questions:
@@ -13,6 +13,6 @@ source: Rmd
 
 ```{r, include=FALSE}
 source("../bin/chunk-options.R")
-knitr_fig_path("05-")
+knitr_fig_path("06-")
 ```
 
