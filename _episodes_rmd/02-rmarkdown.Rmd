@@ -25,7 +25,7 @@ knitr_fig_path("15-")
 ```
 
 # 프로그래밍과 글쓰기
-
+ 
 - [컴퓨터 과학 언플러그드](http://statkclee.github.io/website-csunplugged/)
     - [Computer Science without a computer](https://csunplugged.org/en/)
 - [프로그래밍과 문제해결 - 파이썬, 리보그, 러플](https://statkclee.github.io/code-perspectives/)
