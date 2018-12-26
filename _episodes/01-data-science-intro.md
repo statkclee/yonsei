@@ -60,9 +60,12 @@ source: Rmd
 
 ## Hadley Wickham &rarr; 코딩 [^gui-coding] {#data-science-excel}
 
-[^gui-coding]: [Hadley Wickham – “You can't do data science in a GUI”](https://www.youtube.com/watch?v=cpbtcsGE0OA)
+[^gui-coding]: [Hadley Wickham – “You can not do data science in a GUI”](https://www.youtube.com/watch?v=cpbtcsGE0OA)
 
 <iframe width="300" height="180" src="https://www.youtube.com/embed/cpbtcsGE0OA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## R과 RStudio 소개
+
+[재현가능한 과학적 분석을 위한 R - "R과 RStudio 소개""](https://statkclee.github.io/r-gapminder-kr/01-rstudio-intro/index.html)
 
 
