@@ -24,6 +24,7 @@ source: Rmd
 
 
 
+# [R 저작권과 라이선스(license)](https://statkclee.github.io/data-science/ds-r-license.html)
 
 # 버전제어와 협업
 
