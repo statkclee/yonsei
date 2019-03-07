@@ -1,5 +1,5 @@
 ---
-title: "중간고사"
+title: "중간고사 - 4월25일"
 teaching: 180
 exercises: 0
 questions:

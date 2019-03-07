@@ -1,5 +1,5 @@
 ---
-title: "데이터 수집 - 웹크롤링 [특강-나성호]"
+title: "데이터 수집 - 웹크롤링 [특강-나성호] - 4월11일"
 teaching: 180
 exercises: 0
 questions:

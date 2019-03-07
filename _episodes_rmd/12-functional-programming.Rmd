@@ -1,5 +1,5 @@
 ---
-title: "함수형 프로그래밍"
+title: "함수형 프로그래밍 - 5월23일"
 teaching: 180
 exercises: 0
 questions:
