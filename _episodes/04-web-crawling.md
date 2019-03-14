@@ -15,3 +15,4 @@ source: Rmd
 
 
 
+### [강의노트](../data/R_Web_Crawling.pdf)

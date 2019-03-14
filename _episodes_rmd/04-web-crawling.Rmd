@@ -16,3 +16,4 @@ source("../bin/chunk-options.R")
 knitr_fig_path("06-")
 ```
 
+### [강의노트](../data/R_Web_Crawling.pdf)
