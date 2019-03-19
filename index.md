@@ -10,10 +10,15 @@ root: .
 더 나아가 애자일(Agile) 소프트웨어 개발 프로세스를 차용하여 3~4명이 팀을 이뤄 실제 데이터 과학 제품 및 서비스 개발 프로젝트를 추진하여 
 데이터 과학 입문 과정을 마치게 되면 4차 산업혁명의 원재료인 데이터를 가지고 사회경제적 가치가 있는 제품과 서비스를 개발할 수 있는 기본 역량을 함양하게 된다.
 
-## 실시간 강의노트
+## 인터랙티브 강의노트
 
 - [3월07일](https://beta.etherpad.org/p/yonsei)
 - [3월14일](https://etherpad.net/p/yonsei-20190314)
+
+## 해커톤 안내
+
+- [한국언론진흥재단, "2019 뉴스빅데이터 해커톤 개최"](http://www.kpf.or.kr/site/kpf/ex/board/View.do?cbIdx=254&bcIdx=22283)
+- [’뉴스 데이터’라고 읽고 ’텍스트 데이터’로 분석하여 사례 만들기](https://statkclee.github.io/ds-authoring/ds_kpf.html#1)
 
 > ## 선수과목
 >
