@@ -15,7 +15,7 @@ root: .
 - [3월07일](https://beta.etherpad.org/p/yonsei)
 - [3월14일](https://etherpad.net/p/yonsei-20190314)
 - [3월21일](https://etherpad.net/p/yonsei-20190321)
-
+- [3월28일](https://etherpad.net/p/yonsei-20190328): 팀구성/프로젝트
 
 ## 해커톤 안내
 
