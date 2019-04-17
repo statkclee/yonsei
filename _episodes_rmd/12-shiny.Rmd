@@ -1,5 +1,5 @@
 ---
-title: "데이터 과학 제품 - `shiny` [특강-문건웅]  - 5월30일"
+title: "데이터 과학 제품 - `shiny` [특강-문건웅]  - 5월23일"
 teaching: 180
 exercises: 0
 questions:
@@ -13,7 +13,7 @@ source: Rmd
 
 ```{r, include=FALSE}
 source("../bin/chunk-options.R")
-knitr_fig_path("15-")
+knitr_fig_path("12-")
 ```
 
 ## 
