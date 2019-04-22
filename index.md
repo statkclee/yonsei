@@ -19,6 +19,7 @@ root: .
 - [4월04일](https://etherpad.net/p/yonsei-20190404)
 - [4월11일](https://etherpad.net/p/yonsei-20190411)
 - [4월18일](https://etherpad.net/p/yonsei-20190418)
+- [4월25일](https://etherpad.net/p/yonsei-20190425): 중간고사 프로젝트 발표순서
 
 ## 해커톤 안내
 
