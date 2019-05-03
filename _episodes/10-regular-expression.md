@@ -43,3 +43,7 @@ source: Rmd
 - [정보교육을 위한 파이썬](https://statkclee.github.io/pythonlearn-kr/01-py4inf-python2/) 
     - [유튜브 - 11장 정규표현식](https://www.youtube.com/watch?v=UR6a_wZ8ido&index=29&list=PLlRFEj9H3Oj4JXIwMwN1_ss1Tk8wZShEJ)
 
+## R 정규 표현식
+
+- [R 정규표현식과 문자데이터 - `regexplain`](https://statkclee.github.io/ds-authoring/regex-r-char.html)
+
