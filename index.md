@@ -22,6 +22,7 @@ root: .
 - [4월25일](https://etherpad.net/p/yonsei-20190425): 중간고사 프로젝트 발표순서
 - [5월02일](https://etherpad.net/p/yonsei-20190502)
 - [5월09일](https://etherpad.net/p/yonsei-20190509)
+- [5월30일](https://etherpad.net/p/yonsei-20190530)
 
 
 
