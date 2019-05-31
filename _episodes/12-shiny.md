@@ -15,5 +15,11 @@ source: Rmd
 
 
 
-## 
+## 핸드온 강의자료
 
+- [R과 Shiny를 이용한 Web Application 제작](../data/shinyLecture.pdf)
+- [Shiny Module](../data/Shiny Module.pdf)
+
+## 과제
+
+`shiny`로 `mtcars`데이터을 이용하여 설명변수를 선택하면 단순회귀분석 결과 및 `plot`을 그려주는 앱 제작
