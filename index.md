@@ -23,7 +23,7 @@ root: .
 - [5월02일](https://etherpad.net/p/yonsei-20190502)
 - [5월09일](https://etherpad.net/p/yonsei-20190509)
 - [5월30일](https://etherpad.net/p/yonsei-20190530)
-
+- [6월13일](https://etherpad.net/p/yonsei-20190613)
 
 
 ## 해커톤 안내
