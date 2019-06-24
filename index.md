@@ -31,6 +31,19 @@ root: .
 - [한국언론진흥재단, "2019 뉴스빅데이터 해커톤 개최"](http://www.kpf.or.kr/site/kpf/ex/board/View.do?cbIdx=254&bcIdx=22283)
 - [’뉴스 데이터’라고 읽고 ’텍스트 데이터’로 분석하여 사례 만들기](https://statkclee.github.io/ds-authoring/ds_kpf.html#1)
 
+
+## 데이터 사이언스 입문 프로젝트
+
+- [데이터와 데이트](https://github.com/desaip2468/desaip): 배대영, 홍주혁
+- [장애인 콜택시](https://github.com/calltaxi/data_science_2019): 윤예슬, 지현주, 강형구
+- [save sea turtles](https://github.com/joynkim525/ds_project_saveseaturtle): 이동석, 배수한, 김주연, 이솔희, 양효정
+- [뽀개기](https://github.com/shd04121/heat_island_ds_yonsei): 남승희, 간정현, 서윤지, 전은지
+- [잇츠 잇츠(ITs EATs)+](https://github.com/JaeInK/DataScience_ITS_EATs): 김문정, 김재인, 이은지
+- [데구리](https://github.com/desaip2468/deguri): 윤정하, 서아름, 박진식, 한도윤
+- [따릉따릉 따릉이](https://github.com/dsyonsei122/bike): 김채원,  이다연
+- [역주행역추적](https://github.com/Chase-park/DS_ACTIOM): 박준영, 임지성
+
+
 > ## 선수과목
 >
 > 이번 수업에 특별한 선수과목이 필요하지는 않고, 차근차근 배워간다는 열정과 열린 마음이 중요합니다.
