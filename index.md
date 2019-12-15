@@ -15,7 +15,7 @@ root: .
 - [3월07일](https://beta.etherpad.org/p/yonsei)
 - [3월14일](https://etherpad.net/p/yonsei-20190314)
 - [3월21일](https://etherpad.net/p/yonsei-20190321)
-- [3월28일](https://etherpad.net/p/yonsei-20190328): [팀구성/프로젝트](https://docs.google.com/spreadsheets/d/1rSFl2R7mobi7YyN7V7wf6BL77ejn5RFDK3fx0pZ4n8g/edit?usp=sharing)
+- [3월28일](https://docs.google.com/document/d/1_sX4EER6-APk86DkvLIMFpl6UdLZM8f5WJMDyluY6y8/edit?usp=sharing): [팀구성/프로젝트](https://docs.google.com/spreadsheets/d/1rSFl2R7mobi7YyN7V7wf6BL77ejn5RFDK3fx0pZ4n8g/edit?usp=sharing)
 - [4월04일](https://etherpad.net/p/yonsei-20190404)
 - [4월11일](https://etherpad.net/p/yonsei-20190411)
 - [4월18일](https://etherpad.net/p/yonsei-20190418)
