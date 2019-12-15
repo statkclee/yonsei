@@ -19,12 +19,12 @@ root: .
 - [4월04일](https://etherpad.net/p/yonsei-20190404)
 - [4월11일](https://etherpad.net/p/yonsei-20190411)
 - [4월18일](https://etherpad.net/p/yonsei-20190418)
-- [4월25일](https://etherpad.net/p/yonsei-20190425): 중간고사 프로젝트 발표순서
+- [4월25일](https://docs.google.com/document/d/1uODg5LDBRVHW2bQ7Is8WhmP27EDzL_7C68Cez9k0BZ4/edit?usp=sharing): 중간고사 프로젝트 발표순서
 - [5월02일](https://etherpad.net/p/yonsei-20190502)
 - [5월09일](https://etherpad.net/p/yonsei-20190509)
 - [5월30일](https://etherpad.net/p/yonsei-20190530)
 - [6월13일](https://etherpad.net/p/yonsei-20190613)
-- [6월20일](https://etherpad.net/p/yonsei-20190620): 기말고사 프로젝트 발표
+- [6월20일](https://docs.google.com/document/d/198J82IctOzr5r71Ief-z3XNFIjEuhKubFBSsjsrti6I/edit?usp=sharing): 기말고사 프로젝트 발표
 
 ## 해커톤 안내
 
@@ -38,6 +38,7 @@ root: .
 - [장애인 콜택시](https://github.com/calltaxi/data_science_2019): 윤예슬, 지현주, 강형구
 - [save sea turtles](https://github.com/joynkim525/ds_project_saveseaturtle): 이동석, 배수한, 김주연, 이솔희, 양효정
 - [뽀개기](https://github.com/shd04121/heat_island_ds_yonsei): 남승희, 간정현, 서윤지, 전은지
+    - [간정현,남승희,서윤지,전은지,이광춘 (2019), "서울시 열섬현상 완화를 위한 바람길 및 녹지 입지 선정 제안 : 클러스터링 및 랜덤포레스트 변수 중요도를 활용한 열섬척도 제안을 중심으로", Digital Management Review Vol.6 No.1 pp.27-38](https://bit.ly/2svJMH2)
 - [잇츠 잇츠(ITs EATs)+](https://github.com/JaeInK/DataScience_ITS_EATs): 김문정, 김재인, 이은지
 - [데구리](https://github.com/desaip2468/deguri): 윤정하, 서아름, 박진식, 한도윤
 - [따릉따릉 따릉이](https://github.com/dsyonsei122/bike): 김채원,  이다연
